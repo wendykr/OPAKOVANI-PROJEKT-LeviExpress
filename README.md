@@ -43,7 +43,7 @@ Ve svém projektu již máte vytvořen základy komponenty s názvem `JourneyPic
 2. Napojte funkci `handleSubmit` na událost submit ve formuláři. Ověřte v prohlížeči, že po kliknutí na *Vyhledat spoj* se v konzoli objeví výše uvedený text.
 3. Pomocí `useState` si v komponentě připravte tři stavy: `fromCity`, `toCity` a `date`. Výchozí hodnotou bude ve všech třech případech prázdný řetězec `''`;
 4. Napojte každý ze stavů na správý `<select>` tak, aby `select` zobrazoval vybraný stav a změna v `select`u se promítla do stavu. Vytvoříte tedy dvoucestný databinding, kdy se např. stav `fromCity` bude promítat do `value` příslušného `select`u, a při události `onChange` na `select`u se nová hodnota zapíše do stavu `fromCity`. Obdobně i pro další dva `select`y a stavy `toCity` a `date`.
-5. Upravte funkci `handleSubmit` tak, aby do konzole vypsala všechny tři stavy. Vyzkoušejte, že výběrem stavu v `select`u se změní stav – po kliknutí na tlačítko se do konzole vypíše změněný stav. Tím, že si dočasně změnit výchozí hodnotu v `useState('')` na některou z hodnot (atribut `value`) v `<option>` můžete ověřit, že funguje správně nastavení výchozího stavu `select`u.
+5. Upravte funkci `handleSubmit` tak, aby do konzole vypsala všechny tři stavy. Vyzkoušejte, že výběrem stavu v `select`u se změní stav – po kliknutí na tlačítko se do konzole vypíše změněný stav. Tím, že si dočasně změníte výchozí hodnotu v `useState('')` na některou z hodnot (atribut `value`) v `<option>` můžete ověřit, že funguje správně nastavení výchozího stavu `select`u.
 6. Commitněte změny.
 
 
