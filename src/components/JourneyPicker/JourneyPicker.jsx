@@ -36,7 +36,7 @@ export const JourneyPicker = ({ onJourneyChange }) => {
     try {
       const response = await fetch(`https://apps.kodim.cz/daweb/leviexpress/api/journey?fromCity=${fromCity}&toCity=${toCity}&date=${date}`);
       const data = await response.json();
-      onJourneyChange(data.results.journeyId);
+      onJourneyChange(data.results);
     } catch (error) {
       console.error('Chyba při získávání dat z API:', error);
     }
