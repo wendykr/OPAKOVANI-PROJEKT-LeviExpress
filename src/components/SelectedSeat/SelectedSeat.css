@@ -60,8 +60,3 @@
 .seat:not(.seat--occupied):hover .seat__text {
   fill: white;
 }
-
-.controls {
-  padding: 0 2rem;
-  text-align: center;
-}

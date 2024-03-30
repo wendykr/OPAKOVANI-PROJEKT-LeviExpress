@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #444;
 }
 
@@ -15,9 +15,8 @@ body {
 
 #app {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -30,6 +29,14 @@ header,
 footer {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header,
+  footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 h2 {
@@ -49,6 +56,11 @@ select:focus {
   outline: none;
 }
 
+button:not([disabled]),
+label {
+  cursor: pointer;
+}
+
 .btn {
   color: white;
   background-color: #ed6a5a;
@@ -58,6 +70,12 @@ select:focus {
   outline: none;
   box-shadow: 0 0 3px gray;
   cursor: pointer;
+}
+
+.btn--big {
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
 }
 
 .btn:hover {

@@ -32,7 +32,7 @@ export const JourneyPicker = ({ onJourneyChange }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    
+
     try {
       const response = await fetch(`https://apps.kodim.cz/daweb/leviexpress/api/journey?fromCity=${fromCity}&toCity=${toCity}&date=${date}`);
       const data = await response.json();
