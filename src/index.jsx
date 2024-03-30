@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import { App } from './App';
 import './index.css';
 import { HomePage } from './pages/HomePage/HomePage';
-import { ReservationPage } from './components/ReservationPage/ReservationPage';
+import { ReservationPage } from './pages/ReservationPage/ReservationPage';
 
 const router = createBrowserRouter([
   {

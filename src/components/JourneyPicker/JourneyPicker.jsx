@@ -30,9 +30,16 @@ export const JourneyPicker = ({ onJourneyChange }) => {
     fetchDates();
   }, []);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(fromCity, toCity, date);
+    
+    try {
+      const response = await fetch(`https://apps.kodim.cz/daweb/leviexpress/api/journey?fromCity=${fromCity}&toCity=${toCity}&date=${date}`);
+      const data = await response.json();
+      onJourneyChange(data.results.journeyId);
+    } catch (error) {
+      console.error('Chyba při získávání dat z API:', error);
+    }
   }
 
   const handleSelectFrom = (event) => {
@@ -75,6 +82,7 @@ export const JourneyPicker = ({ onJourneyChange }) => {
               className="btn" 
               type="submit"
               onClick={handleSubmit}
+              disabled={!fromCity || !toCity || !date}
             > 
               Vyhledat spoj
             </button>
