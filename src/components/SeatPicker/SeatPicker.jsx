@@ -2,7 +2,7 @@ import React from 'react';
 import './SeatPicker.css'
 import { SeatRow } from '../SeatRow/SeatRow';
 
-export const SeatPicker = ({ seats }) => {
+export const SeatPicker = ({ seats, selectedSeat }) => {
 
   return (
     <div className="seat-picker container">
@@ -10,7 +10,7 @@ export const SeatPicker = ({ seats }) => {
       <div className="seats">
         <div className="seat-row">
           {
-            seats.map((seat, index) => <SeatRow key={index} row={seat} />)
+            seats.map((seat, index) => <SeatRow key={index} row={seat} rowSelectedSeat={selectedSeat} />)
           }
         </div>
       </div>
