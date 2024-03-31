@@ -18,3 +18,9 @@
 .reservation__info {
   font-weight: bold;
 }
+
+.reservation__error {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
