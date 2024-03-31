@@ -5,6 +5,7 @@ import { App } from './App';
 import './index.css';
 import { HomePage } from './pages/HomePage/HomePage';
 import { ReservationPage } from './pages/ReservationPage/ReservationPage';
+import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/reservation/:reservationId',
         element: <ReservationPage />,
+      },
+      {
+        path: '*',
+        element: <ErrorPage />,
       },
     ],
   },
