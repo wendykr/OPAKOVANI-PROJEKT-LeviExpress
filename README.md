@@ -1,6 +1,6 @@
 # Opakování: LeviExpress
 
-Fiktivní webový projekt semestrálního kurzu [https://www.czechitas.cz/kurzy/react-1-zaklady](React 1 JARO 2024), na kterém si procvičíme, co vše jsme se v Reactu naučili.
+Fiktivní webový projekt semestrálního kurzu [React 1 JARO 2024](https://www.czechitas.cz/kurzy/react-1-zaklady), na kterém si procvičíme, co vše jsme se v Reactu naučili.
 
 ## Založení aplikace a rozběhání routování
 
